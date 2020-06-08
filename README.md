@@ -153,19 +153,19 @@ Please perform these steps to create new resources on Kubernetes Cluster.
 Prerequisites
 ```
 1. Kubernetes config must be placed in $HOME/.kube/config.
-2. Please set th proper context in kubernetes_resources_terraform/main.tf. 
+2. Please set th proper context in terraform_kubernetes_resources/main.tf. 
 3. Create secret mentioned in above section.
 ```
 
 Limitations
 ```
 1. This method will not create Horizantal Pod Autoscale Resource.
-2. This method will not auto-update AWS ECR credetials in Kubernetes Secret.(Which can be manually deployed later.)
+2. This method will not auto-update AWS ECR credetials in Kubernetes Secret.(Which can be manually deployed later).
 ```
 
 Steps to to create new resources on Kubernetes Cluster.
 ```
-$ cd kubernetes_resources_terraform # Changing the directory
+$ cd terraform_kubernetes_resources # Changing the directory
 
 $ terraform init # This command will pull the Terraform Provider Plugins for which Terraform Provider is provided in main.tf
 
